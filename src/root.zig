@@ -1,5 +1,7 @@
-const std = @import("std");
+pub const FaultPage = @import("FaultPage.zig");
 
-pub fn hi() i32 {
-    std.debug.print("hi\n", .{});
+test {
+    std.testing.refAllDecls(@This());
 }
+
+const std = @import("std");
